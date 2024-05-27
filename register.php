@@ -18,6 +18,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $lastname = $_POST['lastname'];
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $confirm_password = $_POST['confirm_password'];
+
+    if ($password !== $confirm_password) {
+        echo "<script>
+                alert('Passwords do not match. Please try again.');
+                window.history.back();
+              </script>";
+        exit;
+    }
 
     // Hash the password before storing it
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
@@ -25,9 +34,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO users (firstname, lastname, email, password) VALUES ('$firstname', '$lastname', '$email', '$hashed_password')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
+        echo "<script>
+                alert('Registered successfully');
+                window.location.href = 'register.html';
+              </script>";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "<script>
+                alert('Error: " . $conn->error . "');
+                window.history.back();
+              </script>";
     }
 
     $conn->close();
