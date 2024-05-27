@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Cake & Bakery</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="top-nav">
+    <a href="#" class="logo">Delicious Cake & Bakery</a>
+    <div class="a-box">
+            <a href="#" class="cart">
+                <img src="images/cart-icon.svg" alt="Cart Icon">
+            </a>
+            <div class="user-dropdown">
+            <button class="user-button">
+                <img src="images/user-icon.svg" alt="User Icon">
+            </button>
+            <ul class="user-dropdown-menu">
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            </div>
+    </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <aside class="sidenav">
+      <button class="category-button active" data-product-container="cakes">Cakes</button>
+      <button class="category-button active" data-product-container="pastries">Pastries</button>
+      <button class="category-button active" data-product-container="bread">Bread</button>
+      <a href="#" class="special-cakes-button">Customized Cake</a>
+    </aside>
+
+    <section class="content-area">
+      <div class="product-container cakes active" data-product-container="cakes"> <h2>Cakes</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <img src="assets/berrykek.jpg" id="p-img" alt="Cake Image">
+            <h3 id="h3-p">Berry Cake</h3>
+            <p id="desc">Berry that comes fresh outta farm & oven!</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img src="assets/carrotkek1.jpg" id="p-img" alt="Cake Image">
+            <h3 id="h3-p">Carrot Cake</h3>
+            <p id="desc">Get this carrot goodness fresh outta oven</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img src="assets/choletkek.jpg" id="p-img" alt="Cake Image">
+            <h3 id="h3-p">Chocolate Cake</h3>
+            <p id="desc">Chocolatey goodness that you will keep craving!</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          <div class="product-item">
+            <img src="assets/shortkek.jpg" id="p-img" alt="Cake Image">
+            <h3 id="h3-p" id="h3-p">Short Cake</h3>
+            <p id="desc">Sweet, Tasty, & Fresh get one now!</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          <div class="product-item">
+            <img src="assets/swisskek.jpg" id="p-img" alt="Cake Image">
+            <h3 id="h3-p" id="h3-p">Swiss Cake</h3>
+            <p id="desc">Have a taste of Central Europe!</p>
+            <button class="add-to-cart-btn">Add to cart</button>
+            </div>
+          <div class="product-item">
+            <img src="assets/creamcake.jpg" id="p-img" alt="Cake Image">
+            <h3 id="h3-p" id="h3-p">Cream Cake</h3>
+            <p id="desc">Get a load of this creaminess delight!</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          <div class="product-item">
+            <img src="assets/redvelvet.jpg" id="p-img" alt="Cake Image">
+            <h3 id="h3-p" id="h3-p">Red Velvet Cake</h3>
+            <p id="desc">Have a taste from the Southern US!</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+      </div>
+
+      <div class="product-container pastries" data-product-container="pastries"> <h2>Pastries</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <img src="assets/kek.jpg" id="p-img" alt="Pastry Image">
+            <h3>Croquenbouche</h3>
+            <p id="desc">Have a crunch & sweetness in your mouth</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img src="assets/macaroons.jpg" id="p-img" alt="Pastry Image">
+            <h3>French Macaroons</h3>
+            <p id="desc">Sweet, Small, & Round making you crave for more!</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img src="assets/donuts.jpg"id="p-img" alt="Pastry Image">
+            <h3>Donuts</h3>
+            <p id="desc">Nothing beats more than a classic donut</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          <div class="product-item">
+            <img src="assets/croissant.jpg" id="p-img" alt="Pastry Image">
+            <h3>Profiterole</h3>
+            <p id="desc">Austrian goodness! A classic</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          <div class="product-item">
+            <img src="assets/cupcake.jpg" id="p-img" alt="Pastry Image">
+            <h3>Cupcake</h3>
+            <p id="desc">A miniature indulgence, perfect for a sweet treat.</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          <div class="product-item">
+            <img src="assets/fraisier.jpg" id="p-img" alt="Pastry Image">
+            <h3>Mini Fraisier</h3>
+            <p id="desc">A layered cake featuring fresh strawberries</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+      </div>
+
+      <div class="product-container bread" data-product-container="bread"> <h2>Bread</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <img src="assets/slicebread.jpg" id="p-img" alt="Bread Image">
+            <h3>Slice Bread</h3>
+            <p id="desc">Pillowy white bread, pre-sliced for perfect toast every time.</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img src="assets/brioche.jpg" id="p-img" alt="Bread Image">
+            <h3>Brioche</h3>
+            <p id="desc">Luxuriously rich brioche, sliced to showcase its flaky layers and golden hue.</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img src="assets/Challah.jpg" id="p-img" alt="Bread Image">
+            <h3>Challah</h3>
+            <p id="desc">Sliced to reveal its fluffy interior and signature twist..</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          <div class="product-item">
+            <img src="assets/sourdough.jpg" id="p-img" alt="Bread Image">
+            <h3>Sourdough</h3>
+            <p id="desc">Enjoy toasted with cheese or savor its unique flavor on its own.</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          <div class="product-item">
+            <img src="assets/baguette.jpg" id="p-img" alt="Bread Image">
+            <h3>French Baguette</h3>
+            <p id="desc">Perfect for dipping in olive oil, soups, or simply savoring its pure breadiness.</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          <div class="product-item">
+            <img src="assets/rye.jpg" id="p-img" alt="Bread Image">
+            <h3>Rye Bread</h3>
+            <p id="desc">Perfect for open-faced sandwiches piled high with meats and cheeses.</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="dash_script.js"></script>
+</body>
+</html>

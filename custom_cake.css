@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+  #cake-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  label {
+    flex-basis: 120px;
+  }
+  
+  select, textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  

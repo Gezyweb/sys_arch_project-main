@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customized Cake</title>
+  <link rel="stylesheet" href="custom_cake.css">
+</head>
+<body>
+  <form id="cake-form">
+    <h2>Customized Cake</h2>
+    <div class="form-group">
+      <label for="flavor">Flavor:</label>
+      <select name="flavor" id="flavor">
+        <option value="choco-moist">Chocolate Moist</option>
+        <option value="red-velvet">Red Velvet</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="num-candles">Number of Candles:</label>
+      <select name="num-candles" id="num-candles">
+        <?php
+        // Generate options for number of candles (1 to 10)
+        for ($i = 1; $i <= 10; $i++) {
+          echo "<option value='$i'>$i</option>";
+        }
+        ?>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Custom Message:</label>
+      <textarea name="message" id="message" rows="4" placeholder="Enter your message (optional)"></textarea>
+    </div>
+
+    <div class="form-group">
+      <p><b>Price:</b> PHP 1,500.00</p>
+    </div>
+
+    <button type="submit">Order Now</button>
+  </form>
+
+  <script src="cake_script.js"></script>  </body>
+</html>
